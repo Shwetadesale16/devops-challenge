@@ -10,7 +10,7 @@ When you run the application (figure it out), you will see the relationship betw
 
 # installation & how to run it
 
-Find it
+Find it now
 
 # Challenge
 
