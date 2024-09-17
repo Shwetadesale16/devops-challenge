@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: getbird
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: getbird
+  template:
+    metadata:
+      labels:
+        app: getbird
+    spec:
+      containers:
+        - name: getbird
+          image: getbird:latest
+          imagePullPolicy: Never
+          ports:
+            - containerPort: 4201
+          resources:
+            requests:
+              cpu: "50m"
+              memory: "64Mi"
+            limits:
+              cpu: "100m"
+              memory: "128Mi"

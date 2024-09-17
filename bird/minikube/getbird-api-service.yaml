@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: getbird
+spec:
+  selector:
+    app: getbird
+  ports:
+    - protocol: TCP
+      port: 4201
+      targetPort: 4201
+      nodePort: 32001
+  type: NodePort
+
